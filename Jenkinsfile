@@ -22,7 +22,7 @@ pipeline {
 			sh 'docker build -t vijayshegde/my-app:2.0.0 .'
 		}
 		}
-		
+/*		
    stage('Push Docker Image'){
        steps
        {
@@ -40,5 +40,6 @@ pipeline {
        sh "ssh -o StrictHostKeyChecking=no ec2-user@13.232.40.185 ${dockerRun}"
      }
    }
+   */
 }
 }
