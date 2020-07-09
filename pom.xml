@@ -51,12 +51,16 @@
 			</exclusions>
 		</dependency>
 	</dependencies>
-
+<packaging>war</packaging>
 	<build>
+		
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+        <finalName>sample</finalName>
+     </configuration>
 			</plugin>
 		</plugins>
 	</build>
