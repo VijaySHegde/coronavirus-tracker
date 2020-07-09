@@ -5,15 +5,15 @@ pipeline {
     }
   stages {
  
-    /*  stage('clean')
+    stage('clean')
             {
                 steps
                  { 
-                    sh 'mvn clean install'
+                    sh 'mvn clean package'
                  }
               
             }
-	    */
+	  
 	  
 			
 		stage('Build docker image')
