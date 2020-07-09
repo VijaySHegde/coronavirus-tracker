@@ -4,7 +4,7 @@ pipeline {
     maven 'maven'
     }
   stages {
-  /*
+ 
       stage('clean')
             {
                 steps
@@ -13,7 +13,7 @@ pipeline {
                  }
               
             }
-	    */
+	  
 			
 		stage('Build docker image')
 		{
