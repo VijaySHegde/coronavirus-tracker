@@ -3,7 +3,7 @@ pipeline {
  tools{
     maven 'maven'
     }
-    stages {
+   /* stages {
 
       stage('clean')
             {
@@ -13,6 +13,7 @@ pipeline {
                  }
               
             }
+	    */
 			
 		stage('Build docker image')
 		{
@@ -22,7 +23,7 @@ pipeline {
 		}
 		}
 		
- /*  stage('Push Docker Image'){
+   stage('Push Docker Image'){
        steps
        {
      withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerHubPwd')]) {
@@ -39,6 +40,5 @@ pipeline {
        sh "ssh -o StrictHostKeyChecking=no ec2-user@13.232.40.185 ${dockerRun}"
      }
    }
-   */
 }
 }
