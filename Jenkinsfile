@@ -3,8 +3,8 @@ pipeline {
  tools{
     maven 'maven'
     }
-   /* stages {
-
+  stages {
+  /*
       stage('clean')
             {
                 steps
