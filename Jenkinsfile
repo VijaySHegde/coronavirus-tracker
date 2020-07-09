@@ -5,7 +5,7 @@ pipeline {
     }
   stages {
  
-      stage('clean')
+    /*  stage('clean')
             {
                 steps
                  { 
@@ -13,13 +13,14 @@ pipeline {
                  }
               
             }
+	    */
 	  
 			
 		stage('Build docker image')
 		{
 			steps
 			{
-			sh 'docker build -t vijayshegde/my-app:2.0.0 .'
+			sh 'docker build -t vijayshegde/myapp:2.0.0 .'
 		}
 		}
 /*		
