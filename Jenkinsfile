@@ -10,15 +10,13 @@ pipeline {
             {
                 steps
                  { 
-	          def mvnHome = tool name: 'maven-3', type: 'maven'
-			 {
-		  sh "${mvnHome}/bin/mvn clean package"
+	          sh 'mvn clean package'
                  }
 		 }
             }
 	  
 	  
-			
+		/*
 		stage('Build docker image')
 		{
 			steps
@@ -46,4 +44,4 @@ pipeline {
    }
    */
 }
-}
+
